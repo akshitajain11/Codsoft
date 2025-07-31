@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Join Now - FitLife</title>
+  <link rel="stylesheet" href="style2.css" />
+  <style>
+    /* Use this only if you're NOT linking style.css */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf2f8;
+      padding: 40px;
+    }
+    form {
+      background-color: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    h2 {
+      text-align: center;
+      color: #ff4081;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Join FitLife - Sign Up</h2>
+
+  <form action="#" method="post">
+    <!-- Full Name -->
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+    <!-- Email -->
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required placeholder="e.g. +91-9876543210">
+
+    <!-- Fitness Goal -->
+    <label for="goal">Fitness Goal</label>
+    <select id="goal" name="goal" required>
+      <option value="">-- Select Goal --</option>
+      <option>Weight Loss</option>
+      <option>Muscle Gain</option>
+      <option>General Fitness</option>
+    </select>
+
+    <!-- Preferred Workout Type -->
+    <label for="workout">Preferred Workout Type</label>
+    <select id="workout" name="workout" required>
+      <option value="">-- Select Type --</option>
+      <option>Yoga</option>
+      <option>Cardio</option>
+      <option>Strength Training</option>
+      <option>Home Workout</option>
+    </select>
+
+    <!-- Age -->
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="12" max="100" placeholder="Enter your age">
+
+    <!-- Gender -->
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="">-- Select Gender --</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <!-- Time Preference -->
+    <label for="time">Time Preference</label>
+    <select id="time" name="time" required>
+      <option value="">-- Select Time --</option>
+      <option>Morning</option>
+      <option>Evening</option>
+      <option>Flexible</option>
+    </select>
+
+    <!-- Membership Plan -->
+    <label for="plan">Membership Plan</label>
+    <select id="plan" name="plan" required>
+      <option value="">-- Select Plan --</option>
+      <option>Trial</option>
+      <option>Monthly</option>
+      <option>Yearly</option>
+    </select>
+
+    <button type="submit">Submit & Join</button>
+  </form>
+
+</body>
+</html>
